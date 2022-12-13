@@ -1,0 +1,254 @@
+[
+    {
+      "id": "1",
+      "name": "SINGE ENRAGÉ",
+      "price": 59.99,
+      "desc": "Limited Edition Hoodie",
+      "imgSrc": "singenrage",
+      "category": "Hoodie",
+      "color": "pink"
+    },
+    {
+      "id": "2",
+      "name": "OG BLUE HOODIE",
+      "price": 49.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "bluehoodie",
+      "category": "Hoodie",
+      "color": "blue"
+    },
+    {
+      "id": "3",
+      "name": "LIGHTBLUE HOODIE",
+      "price": 49.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "aquahoodie",
+      "category": "Hoodie",
+      "color": "blue"
+    },
+    {
+      "id": "4",
+      "name": "OG BLACK HOODIE",
+      "price": 49.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "blackhoodie",
+      "category": "Hoodie",
+      "color": "black"
+    },
+    {
+      "id": "5",
+      "name": "OG RED HOODIE",
+      "price": 49.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "redhoodie",
+      "category": "Hoodie",
+      "color": "red"
+    },
+    {
+      "id": "6",
+      "name": "OG WHITE HOODIE",
+      "price": 49.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "whitehoodie",
+      "category": "Hoodie",
+      "color": "white"
+    },
+    {
+      "id": "7",
+      "name": "BLACK TEE",
+      "price": 29.99,
+      "desc": "Limited Edition Tee",
+      "imgSrc": "blacklogotee",
+      "category": "Tee",
+      "color": "black"
+    },
+    {
+      "id": "8",
+      "name": "BLACK TEE",
+      "price": 25.99,
+      "desc": "A Raging Ape v2",
+      "imgSrc": "blacktee",
+      "category": "Tee",
+      "color": "black"
+    },
+    {
+      "id": "9",
+      "name": "OG BLUE TEE",
+      "price": 25.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "bluetee",
+      "category": "Tee",
+      "color": "blue"
+    },
+    {
+      "id": "10",
+      "name": "NAVY TEE",
+      "price": 29.99,
+      "desc": "Limited Edition Tee",
+      "imgSrc": "navylogotee",
+      "category": "Tee",
+      "color": "navy"
+    },
+    {
+      "id": "11",
+      "name": "WHITE TEE",
+      "price": 29.99,
+      "desc": "Limited Edition Tee",
+      "imgSrc": "whitelogotee",
+      "category": "Tee",
+      "color": "white"
+    },
+    {
+      "id": "12",
+      "name": "WHITE TEE",
+      "price": 25.99,
+      "desc": "A Raging Ape v2",
+      "imgSrc": "whitetee",
+      "category": "Tee",
+      "color": "white"
+    },
+    {
+      "id": "13",
+      "name": "OG RED TEE",
+      "price": 25.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "redtee",
+      "category": "Tee",
+      "color": "red"
+    },
+    {
+      "id": "14",
+      "name": "GRAY SHORTS",
+      "price": 29.99,
+      "desc": "Limited Edition Shorts",
+      "imgSrc": "grayshortslimited",
+      "category": "Shorts",
+      "color": "gray"
+    },
+    {
+      "id": "15",
+      "name": "BLACK SHORTS",
+      "price": 29.99,
+      "desc": "Limited Edition Shorts",
+      "imgSrc": "blackshortslimited",
+      "category": "Shorts",
+      "color": "black"
+    },
+    {
+      "id": "16",
+      "name": "OG GRAY SHORTS",
+      "price": 25.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "grayshorts",
+      "category": "Shorts",
+      "color": "gray"
+    },
+    {
+      "id": "17",
+      "name": "BLACK SHORTS",
+      "price": 25.99,
+      "desc": "A Raging Ape v2",
+      "imgSrc": "blackshorts",
+      "category": "Shorts",
+      "color": "black"
+    },
+    {
+      "id": "18",
+      "name": "OG GRAY SWEATS",
+      "price": 33.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "graysweats",
+      "category": "Sweatpants",
+      "color": "gray"
+    },
+    {
+      "id": "19",
+      "name": "OG BLACK SWEATS",
+      "price": 33.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "blacksweatschamp",
+      "category": "Sweatpants",
+      "color": "black"
+    },
+    {
+      "id": "20",
+      "name": "DARKGRAY SWEATS",
+      "price": 33.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "darkgraysweats",
+      "category": "Sweatpants",
+      "color": "gray"
+    },
+    {
+      "id": "21",
+      "name": "OG NAVY SWEATS",
+      "price": 33.99,
+      "desc": "A Raging Ape Original",
+      "imgSrc": "navysweats",
+      "category": "Sweatpants",
+      "color": "navy"
+    },
+    {
+      "id": "22",
+      "name": "OG GRAY SHORTS",
+      "price": 25.99,
+      "desc": "A Womens Raging Ape Original",
+      "imgSrc": "womenshorts1",
+      "category": "Shorts",
+      "color": "gray"
+    },
+    {
+      "id": "23",
+      "name": "OG NAVY SHORTS",
+      "price": 25.99,
+      "desc": "A Womens Raging Ape Original",
+      "imgSrc": "womenshorts2",
+      "category": "Shorts",
+      "color": "navy"
+    },
+    {
+      "id": "24",
+      "name": "TURQUOISE SHIRT",
+      "price": 33.99,
+      "desc": "A Womens Raging Ape Original",
+      "imgSrc": "womenshirt",
+      "category": "Tee",
+      "color": "green"
+    },
+    {
+      "id": "25",
+      "name": "GRAY SHIRT",
+      "price": 33.99,
+      "desc": "A Womens Raging Ape Original",
+      "imgSrc": "womenshirt2",
+      "category": "Tee",
+      "color": "gray"
+    },
+    {
+      "id": "26",
+      "name": "BLUE APE TEE",
+      "price": 25.99,
+      "desc": "Special Edition Tee",
+      "imgSrc": "blue",
+      "category": "Tee",
+      "color": "blue"
+    },
+    {
+      "id": "27",
+      "name": "WHITE APE TEE",
+      "price": 25.99,
+      "desc": "Special Edition Tee",
+      "imgSrc": "white",
+      "category": "Tee",
+      "color": "white"
+    },
+    {
+      "id": "28",
+      "name": "BLACK APE TEE",
+      "price": 25.99,
+      "desc": "Special Edition Tee",
+      "imgSrc": "black",
+      "category": "Tee",
+      "color": "black"
+    }
+  ]
