@@ -59,7 +59,7 @@ export default class ProdListMobile extends React.Component {
               </ul>
             </div>
             <div class="sectmobile">
-              <p class="opt1mobile">Sort by</p>
+              <p class="opt1">Sort by</p>
               <ul>
               <li><Link className="sorted" style={{ textDecoration: 'none', color: 'black'}} to='/products'>None</Link></li>
               <li><Link className="sorted" style={{ textDecoration: 'none', color: 'black'}} to='/products/l2h'>Price: Low to High</Link></li>
