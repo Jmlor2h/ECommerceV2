@@ -654,7 +654,11 @@ html {
 /* when screen is smaller than 600px, removes all but home link. shows burger menu to open up a responsive nav menu. */
 @media screen and (max-width: 989px) {
   .navbar .logo {
-    font-size: 2vw;
+    font-size: 3vw;
+  }
+
+  .navbar .navl {
+    font-size: 2.5vw;
   }
 }
 /* responsiveness, displays nav bar vertically instead of horizontally.*/
