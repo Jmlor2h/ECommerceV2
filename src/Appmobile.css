@@ -43,6 +43,15 @@
     color: firebrick;
 }
 
+.sectmobile ul li {
+    list-style: none !important;
+    text-decoration: none;
+}
+
+.sectmobile ul {
+    list-style: none !important;
+}
+
 @media screen and (min-width: 375px) {
     .product-itemmobile {
         width: 200px;
