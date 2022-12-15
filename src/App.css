@@ -28,7 +28,7 @@
 
 .aboutus {
   font-size: 2vw;
-  letter-spacing: 2.2px;
+  letter-spacing: 1px;
 }
 .aboutus1 {
   font-size: 3vw;
@@ -219,7 +219,7 @@
 
   
   .desc{
-    letter-spacing: 1px;
+    letter-spacing: 0px;
   }
 
 
@@ -680,11 +680,11 @@ html {
 
 @media screen and (max-width: 600px) {
   footer {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .footertitle {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
