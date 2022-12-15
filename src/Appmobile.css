@@ -2,6 +2,14 @@
     font-size: 20px;
 }
 
+.swiper-button-prev {
+    color: black; 
+}
+
+.swiper-button-next {
+    color: black;
+}
+
 .sect1mobile {
     font-size: 20px;
 }

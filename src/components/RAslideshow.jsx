@@ -41,8 +41,9 @@ const Slideshow = () => {
             slidesPerView={1}
             pagination={{ clickable: true }}
             loop={true}
+            speed={2500}
             navigation={true}
-            autoplay={{delay:3500,
+            autoplay={{delay:4000,
             disableOnInteraction:false}}
           >
             {images.map(({ imageUrl }, index) => {
