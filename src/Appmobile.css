@@ -52,6 +52,24 @@
     list-style: none !important;
 }
 
+.sect1mobile ul li {
+    list-style: none !important;
+    text-decoration: none;
+}
+
+.sect1mobile ul {
+    list-style: none !important;
+}
+
+.sect2mobile ul li {
+    list-style: none !important;
+    text-decoration: none;
+}
+
+.sect2mobile ul {
+    list-style: none !important;
+}
+
 @media screen and (min-width: 375px) {
     .product-itemmobile {
         width: 200px;
