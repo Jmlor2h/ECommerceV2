@@ -37,7 +37,7 @@ export default class ProdList extends React.Component {
         <h1>Our Products</h1>
         <div class="container">
           <br />
-          <section class="sideoptions">
+          <div class="sideoptionsmobile">
             <div>
               <ul>
                 <li>
@@ -58,7 +58,7 @@ export default class ProdList extends React.Component {
                 <br />
               </ul>
             </div>
-            <div class="sect">
+            <div class="sectmobile">
               <p class="opt1">Sort by</p>
               <ul>
               <li><Link className="sorted" style={{ textDecoration: 'none', color: 'black'}} to='/products'>None</Link></li>
@@ -67,7 +67,7 @@ export default class ProdList extends React.Component {
               </ul>
             </div>
             <br />
-            <div class="sect1">
+            <div class="sect1mobile">
               <p class="opt1">Products</p>
               <ul>
                 <li onClick={this.myFilter("Base")}>All</li>
@@ -79,7 +79,7 @@ export default class ProdList extends React.Component {
               </ul>
             </div>
             <br />
-            <div class="sect2">
+            <div class="sect2mobile">
               <p class="opt1">Color</p>
               <ul>
                 <li onClick={this.myFilter2("")}>All</li>
@@ -92,8 +92,8 @@ export default class ProdList extends React.Component {
               </ul>
             </div>
             <br />
-          </section>
-          <div class="product-list">
+          </div>
+          <div class="product-listmobile">
             {Products.filter((props) => {
               if (this.state.filterText === "") {
                 return true;
@@ -121,8 +121,8 @@ export default class ProdList extends React.Component {
               })
               .map((props) => (
                 <section>
-                  <div class="product-item">
-                    <div class="product-img">
+                  <div class="product-itemmobile">
+                    <div class="product-imgmobile">
                       <img
                         src={require("../images/" + props.imgSrc + ".png")}
                         alt={props.imgSrc}

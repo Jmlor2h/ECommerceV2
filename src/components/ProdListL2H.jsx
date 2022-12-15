@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import Products from "./Products.json";
 
-export default class ProdList2 extends React.Component {
+export default class ProdListMobile extends React.Component {
   state = {
     type: "Base",
     filterText: "",
-    color: ""
+    colour: "",
   };
 
   //UseState is a react hook that lets you set some state to react component.
@@ -17,9 +17,9 @@ export default class ProdList2 extends React.Component {
     };
   }
 
-  myFilter2(color) {
+  myFilter2(colour) {
     return () => {
-      this.setState({ color });
+      this.setState({ colour });
     };
   }
 
@@ -37,7 +37,7 @@ export default class ProdList2 extends React.Component {
         <h1>Our Products</h1>
         <div class="container">
           <br />
-          <section class="sideoptions">
+          <div class="sideoptionsmobile">
             <div>
               <ul>
                 <li>
@@ -58,8 +58,8 @@ export default class ProdList2 extends React.Component {
                 <br />
               </ul>
             </div>
-            <div class="sect">
-              <p class="opt1">Sort by</p>
+            <div class="sectmobile">
+              <p class="opt1mobile">Sort by</p>
               <ul>
               <li><Link className="sorted" style={{ textDecoration: 'none', color: 'black'}} to='/products'>None</Link></li>
               <li><Link className="sorted" style={{ textDecoration: 'none', color: 'black'}} to='/products/l2h'>Price: Low to High</Link></li>
@@ -67,7 +67,7 @@ export default class ProdList2 extends React.Component {
               </ul>
             </div>
             <br />
-            <div class="sect1">
+            <div class="sect1mobile">
               <p class="opt1">Products</p>
               <ul>
                 <li onClick={this.myFilter("Base")}>All</li>
@@ -79,7 +79,7 @@ export default class ProdList2 extends React.Component {
               </ul>
             </div>
             <br />
-            <div class="sect2">
+            <div class="sect2mobile">
               <p class="opt1">Color</p>
               <ul>
                 <li onClick={this.myFilter2("")}>All</li>
@@ -92,8 +92,8 @@ export default class ProdList2 extends React.Component {
               </ul>
             </div>
             <br />
-          </section>
-          <div class="product-list">
+          </div>
+          <div class="product-listmobile">
             {Products.filter((props) => {
               if (this.state.filterText === "") {
                 return true;
@@ -103,6 +103,7 @@ export default class ProdList2 extends React.Component {
                 );
               }
             })
+
               .filter((props) => {
                 if (this.state.type === "Base") {
                   return true;
@@ -112,30 +113,28 @@ export default class ProdList2 extends React.Component {
               })
 
               .filter((props) => {
-                if (this.state.color === "") {
+                if (this.state.colour === "") {
                   return true;
                 } else {
-                  return this.state.color === props.color;
+                  return this.state.colour === props.color;
                 }
               })
               .sort((a,b) => a.price - b.price)
               .map((props) => (
                 <section>
-                  <div class="product-item">
-                    <div class="product-img">
+                  <div class="product-itemmobile">
+                    <div class="product-imgmobile">
                       <img
                         src={require("../images/" + props.imgSrc + ".png")}
                         alt={props.imgSrc}
                       />
-                      <button type="button" class="add-to-cart-btn"></button>
                     </div>
                     <div class="product-content">
                       <h3 class="product-name">{props.name}</h3>
                       <p class="product-desc">{props.desc}</p>
                       <p class="product-price">{props.price}</p>
                       <button type = "button" class="add-to-cart-btn">
-                    <i class= "fa fa-shopping-cart"></i> Add To Cart</button>
-                    </div>
+                    <i class= "fa fa-shopping-cart"></i> Add To Cart</button>                    </div>
                   </div>
                 </section>
               ))}

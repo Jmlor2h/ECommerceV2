@@ -198,12 +198,12 @@
     text-decoration: none;
   }
 
-  .sect a {
+  .sect1mobile a {
     text-decoration: none;
     list-style: none;
   }
 
-  .sect ul li:hover {
+  .sect1mobile ul li:hover {
     color: firebrick;
   }
 
@@ -582,7 +582,7 @@ html {
   color: firebrick;
 }
 
-.sideoptions ul li:hover {
+.sideoptionsmobile ul li:hover {
   color: firebrick;
   cursor: pointer;
 }
