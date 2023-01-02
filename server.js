@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors');
 const mysql = require('mysql2');
 const path = require('path');
 
@@ -21,10 +20,6 @@ conn.connect((err) => {
     }
     console.log(`connection worked`);
 })
-
-app.use(cors());
-
-app.use(express.json());
 
 app.get('/api/products', (req, res) =>{
     if (!conn) res.send([]);
