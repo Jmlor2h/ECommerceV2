@@ -8,8 +8,8 @@ const app = express();
 
 const conn = mysql.createConnection({
     host: '127.0.0.1',
-    user: 'root',
-    password: 'nylah0424',
+    user: 'Ecommerce',
+    password: 'nylah04240',
     database: 'Ecommerce'
 });
 
