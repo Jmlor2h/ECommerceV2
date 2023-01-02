@@ -10,6 +10,7 @@ import {Link} from 'react-router-dom';
 const Home = () => {
     return(
       <div>
+        <br></br>
       <main class="homepage">
       <section>
         <div class="description">
