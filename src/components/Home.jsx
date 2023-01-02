@@ -9,6 +9,7 @@ import {Link} from 'react-router-dom';
 
 const Home = () => {
     return(
+      <div>
       <main class="homepage">
       <section>
         <div class="description">
@@ -48,6 +49,7 @@ const Home = () => {
         </div>
       </section>
     </main> 
+    </div>
     )
 }
 

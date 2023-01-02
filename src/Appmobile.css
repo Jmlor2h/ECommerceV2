@@ -2,6 +2,10 @@
     font-size: 20px;
 }
 
+.sideoptionsmobile input {
+    margin-left: 1rem;
+}
+
 .swiper-button-prev {
     color: black; 
 }
@@ -213,7 +217,7 @@
         grid-template-columns: repeat(5, 1fr);
     }
     .product-itemmobile {
-        width: 230px;
+        width: 225px;
         height: 400px;
     }
 

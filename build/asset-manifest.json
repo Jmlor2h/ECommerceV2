@@ -1,46 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d42dec38.css",
-    "main.js": "/static/js/main.8468306d.js",
-    "static/media/womenshorts1.png": "/static/media/womenshorts1.0c97f4e8a3e89848124b.png",
-    "static/media/bluetee.png": "/static/media/bluetee.5f71f416a7238c1f7828.png",
-    "static/media/womenshorts2.png": "/static/media/womenshorts2.617b368c2addefcf1db3.png",
-    "static/media/womenshirt2.png": "/static/media/womenshirt2.c08ad54183c7405d9373.png",
-    "static/media/redtee.png": "/static/media/redtee.43694e3fbe42a2dee941.png",
-    "static/media/beatsresize2.png": "/static/media/beatsresize2.3f6f4a21b0520496808c.png",
-    "static/media/grayshortslimited.png": "/static/media/grayshortslimited.5b0b1f528f22ef569bb3.png",
-    "static/media/grayshorts.png": "/static/media/grayshorts.1b86f86ed2e8e75d0091.png",
-    "static/media/aquahoodie.png": "/static/media/aquahoodie.24c3bbb66bcf7ecbc930.png",
-    "static/media/womenshirt.png": "/static/media/womenshirt.c23a61614ebf50f4426f.png",
-    "static/media/blue.png": "/static/media/blue.09ac8b5bef5430a8fb9b.png",
-    "static/media/navylogotee.png": "/static/media/navylogotee.4d724cb930c1329e3aab.png",
-    "static/media/whitelogotee.png": "/static/media/whitelogotee.980223f99bba53ea9f2c.png",
-    "static/media/whitetee.png": "/static/media/whitetee.0396e66a8313e1211e7e.png",
-    "static/media/redhoodie.png": "/static/media/redhoodie.4f0c06c6a0870762fb3c.png",
-    "static/media/blackshorts.png": "/static/media/blackshorts.be401c5be0b6353f6108.png",
-    "static/media/bluehoodie.png": "/static/media/bluehoodie.33100cce993ed0740f99.png",
-    "static/media/white.png": "/static/media/white.23d0031cfe8874db4429.png",
-    "static/media/banner.png": "/static/media/banner.5ba1f9d1cb5919258676.png",
-    "static/media/blacklogotee.png": "/static/media/blacklogotee.530f41c21c3c95d34fe9.png",
-    "static/media/blackshortslimited.png": "/static/media/blackshortslimited.c87620a8099d088d7a59.png",
-    "static/media/blacktee.png": "/static/media/blacktee.36ede611cf2132677ccf.png",
-    "static/media/whitehoodie.png": "/static/media/whitehoodie.ab262e2f7a22eca26eb0.png",
-    "static/media/black.png": "/static/media/black.fdb944662b2213ce47fc.png",
-    "static/media/graysweats.png": "/static/media/graysweats.9c556142fae71a830be7.png",
+    "main.css": "/static/css/main.9a3ac8af.css",
+    "main.js": "/static/js/main.29cd3728.js",
     "static/media/heroimage.png": "/static/media/heroimage.520b97cd4856e37273e7.png",
-    "static/media/blacksweatschamp.png": "/static/media/blacksweatschamp.b15d075fe02ed0a8cc4d.png",
-    "static/media/singenrage.png": "/static/media/singenrage.c0c0119fcbae8593a76d.png",
-    "static/media/darkgraysweats.png": "/static/media/darkgraysweats.7dda00b321b99efc9efa.png",
-    "static/media/blackhoodie.png": "/static/media/blackhoodie.ee17d0d5b3e721e14363.png",
-    "static/media/navysweats.png": "/static/media/navysweats.b4d6e58dab9c0538eaa3.png",
     "static/media/logo.png": "/static/media/logo.9f15257667ee0d26c29a.png",
     "static/media/instagram.png": "/static/media/instagram.43d3f23fc6ca28025a90.png",
     "index.html": "/index.html",
-    "main.d42dec38.css.map": "/static/css/main.d42dec38.css.map",
-    "main.8468306d.js.map": "/static/js/main.8468306d.js.map"
+    "main.9a3ac8af.css.map": "/static/css/main.9a3ac8af.css.map",
+    "main.29cd3728.js.map": "/static/js/main.29cd3728.js.map"
   },
   "entrypoints": [
-    "static/css/main.d42dec38.css",
-    "static/js/main.8468306d.js"
+    "static/css/main.9a3ac8af.css",
+    "static/js/main.29cd3728.js"
   ]
 }
