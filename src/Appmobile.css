@@ -64,6 +64,10 @@
   list-style: none !important;
 }
 
+.sideoptionsmobile ul li {
+  list-style: none;
+}
+
 .sect1mobile ul li {
   list-style: none !important;
   text-decoration: none;
@@ -266,3 +270,4 @@
     height: 180px;
   }
 }
+

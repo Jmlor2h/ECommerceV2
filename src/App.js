@@ -1,5 +1,6 @@
 import './App.css';
-import './Appmobile.css'
+import './Appmobile.css';
+import './nav.css';
 import Header from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'

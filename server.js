@@ -1,14 +1,15 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const path = require('path');
 
 
 const app = express();
 
+
 const conn = mysql.createConnection({
     host: '127.0.0.1',
-    user: 'Ecommerce',
-    password: 'nylah04240',
+    user: 'root',
+    password: 'nylah0424',
     database: 'Ecommerce'
 });
 
@@ -24,7 +25,7 @@ conn.connect((err) => {
 app.get('/api/products', (req, res) =>{
     if (!conn) res.send([]);
 
-    conn.query("SELECT * FROM products2", (err, results) =>{
+    conn.query("SELECT * FROM productlist", (err, results) =>{
         if (err) {
             console.log(err)
         } else {

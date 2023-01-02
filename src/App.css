@@ -13,10 +13,12 @@
   box-shadow: 0 0 2vw 0 gray;
   border-radius: 10px;
   opacity: 80%;
+  position: relative;
 }
 .description {
   margin-top: 5vh;
   padding: 1rem 0;
+  position: relative;
 }
 .desc {
   position: relative;
@@ -520,11 +522,24 @@ html {
     font-size: 2.5vw;
   }
 }
+@media screen and (max-width: 989px) {
+  .navbar a:not(:nth-child(1)) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar a {
+      border: solid 0;
+      border-radius: 0;
+  }
+  
+  .navbar .logo{
+    font-size: 2vw;
+  }
+}
 /* responsiveness, displays nav bar vertically instead of horizontally.*/
 @media screen and (max-width: 989px) {
-  .navbar.responsive {
-    position: relative;
-  }
+  .navbar.responsive {position: relative;}
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;

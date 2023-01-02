@@ -1,39 +1,69 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import { useState } from "react";
 
 
 const Navbar = () => {
-       return (
-      <header>
-            <nav class="navbar navbar-dark bg-light fixed-top">
-  <div class="container-fluid">
-    <strong><Link class="navbar-brand text-dark" to='/'>"Raging-Ape"</Link></strong>
-    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
-      <span class="navbar-toggler-icon bg-dark"></span>
-    </button>
-    <div class="offcanvas offcanvas-end bg-light text-bg-dark" tabindex="-1" id="offcanvasLightNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel"><strong><Link class="text-dark" to='/'>"Raging-Ape"</Link></strong></h5>
-        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body bg-light">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-          <Link class='nav-link aria-current="page text-dark' to='/'>Home</Link>
-          </li>
-          <li class="nav-item">
-          <Link class='nav-link aria-current="page text-dark' to='/products'>Products</Link>
-          </li>
-          <li class="nav-item">
-          <Link class='nav-link aria-current="page text-dark' to='/contact'>Contact Us</Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-    </header>
-    ) 
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
+
+    return (
+      <nav className="navigation">
+        <a href="/" className="brand-name">
+          "RAGING-APE"
+        </a>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded)
+          }}
+        >
+<svg viewBox="0 0 100 80" width="40" height="40">
+  <rect width="100" height="20"></rect>
+  <rect y="30" width="100" height="20"></rect>
+  <rect y="60" width="100" height="20"></rect>
+</svg>
+        </button>
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
+          <ul>
+            <li>
+            <Link onClick={() => {
+            setIsNavExpanded(!isNavExpanded)
+          }} class='navl' to='/'>Home</Link>
+            </li>
+            <li>
+            <Link onClick={() => {
+            setIsNavExpanded(!isNavExpanded)
+          }} class='navl' to='/products'>Products</Link>
+            </li>
+            <li>
+            <Link onClick={() => {
+            setIsNavExpanded(!isNavExpanded)
+          }} class='navl' to='/contact'>Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    );
+
+    //    return (
+    //   <header>
+    //     <nav>
+    //     <div class="navbar" id="topnavbar">
+    //       <strong><Link class='logo' to='/'>"Raging-Ape"</Link></strong>
+    //       <Link class='navl' to='/'>Home</Link>
+    //       <Link class='navl' to='/products'>Products</Link>
+    //       <Link class='navl' to='/contact'>Contact</Link>
+    //       <a class="shopcart"><i class="fa fa-shopping-cart icon-4x"></i></a>
+    //       <a href="javascript:void(0);" class="icon" onclick={myFunction}> 
+    //         <i class="fa fa-bars"></i>
+    //       </a>
+    //     </div>
+    //     </nav>
+    // </header>
 }
 
 export default Navbar;
