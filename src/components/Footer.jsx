@@ -4,6 +4,7 @@ import React from "react";
 const Footer = () => {
     return ( 
       <div>
+        <div class="grow"></div>
     <footer>
      <section class="footerhelp">
       <div class="footertitle">HELP</div>
@@ -27,7 +28,6 @@ const Footer = () => {
     <footer class="footer2">
       <div>&copy;"RAGING-APE"<br></br>WHERE QUALITY MEETS AFFORDABILITY</div>
     </footer>
-    <div class="grow"></div>
     </div>
     )
 }
