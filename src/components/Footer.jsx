@@ -27,6 +27,7 @@ const Footer = () => {
     <footer class="footer2">
       <div>&copy;"RAGING-APE"<br></br>WHERE QUALITY MEETS AFFORDABILITY</div>
     </footer>
+    <div class="grow"></div>
     </div>
     )
 }
