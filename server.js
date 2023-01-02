@@ -29,7 +29,7 @@ app.use(express.json());
 app.get('/api/products', (req, res) =>{
     if (!conn) res.send([]);
 
-    conn.query("SELECT * FROM productlist", (err, results) =>{
+    conn.query("SELECT * FROM products", (err, results) =>{
         if (err) {
             console.log(err)
         } else {
