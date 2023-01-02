@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const path = require('path');
 
 
@@ -8,7 +8,7 @@ const app = express();
 
 const conn = mysql.createConnection({
     host: '127.0.0.1',
-    user: 'Ecommerce',
+    user: 'root',
     password: 'nylah04240',
     database: 'Ecommerce'
 });
