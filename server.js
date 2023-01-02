@@ -24,7 +24,7 @@ conn.connect((err) => {
 app.get('/api/products', (req, res) =>{
     if (!conn) res.send([]);
 
-    conn.query("SELECT * FROM products", (err, results) =>{
+    conn.query("SELECT * FROM products2", (err, results) =>{
         if (err) {
             console.log(err)
         } else {
