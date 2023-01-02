@@ -35,7 +35,7 @@ app.get('/api/products', (req, res) =>{
 
 app.use(express.static(path.join(__dirname, "./build")));
 
-app.use((req, res, next) => {
+app.use((req, res) => {
     res.sendFile(path.join(__dirname, "./build", "index.html"));
 });
 
