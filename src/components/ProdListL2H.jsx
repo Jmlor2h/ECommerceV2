@@ -186,7 +186,7 @@ export default class ProdList extends React.Component {
                     </div>
                     <div class="product-content">
                       <h3 class="product-name">{props.name}</h3>
-                      <p class="product-desc">{props.desc}</p>
+                      <p class="product-desc">{props.proddesc}</p>
                       <p class="product-price">${props.price}</p>
                       <button type="button" class="add-to-cart-btn">
                         <i class="fa fa-shopping-cart"></i> Add To Cart
