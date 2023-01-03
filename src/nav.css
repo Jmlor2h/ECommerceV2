@@ -12,6 +12,10 @@
   z-index: 2;
 }
 
+.navdescmobile {
+  display: none;
+}
+
 .brand-name {
     text-decoration: none;
     color: black;
@@ -60,6 +64,10 @@
     .hamburger {
       display: block;
     }
+
+    .navdescmobile {
+      display: block;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -94,11 +102,17 @@
     }
   }
 
+    .navdescli:hover {
+      background-color: white !important;
+    }
+
+
   @media screen and (max-width: 768px) {
     .navigation-menu ul {
       /* previous styles */
       display: none;
     }
+
   }
 
   @media screen and (max-width: 768px) {

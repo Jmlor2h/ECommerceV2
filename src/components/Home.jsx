@@ -28,11 +28,8 @@ const Home = () => {
         <div class="aboutus1">ABOUT US!</div>
         <div class="aboutus">
           <p>
-            <strong
-              >Founded in 2022 by Jacob Mlo<br />We strive to provide high
-              quality clothing at an affordable price<br />10% of our profits
-              are put towards saving endangered apes</strong
-            >
+              Founded in 2022 by Jacob Mlo<br />We strive to provide high
+              quality clothing at an affordable price<br /> Come see us in person and be helped out by a member of our wonderful staff team <br/> or place an order online!
           </p>
         </div>
       </section>

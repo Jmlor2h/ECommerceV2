@@ -44,6 +44,8 @@ const Navbar = () => {
             setIsNavExpanded(!isNavExpanded)
           }} class='navl' to='/contact'>Contact</Link>
             </li>
+            <li class="navdescli"><p class="navdescmobile">We're glad you're here!</p>
+          <p class="navdescmobile">Located at 227 W College St, Charlotte NC <br/> Come see us in person for exclusives and more deals! <br/> We can be reached at 704-983-2617 by phone or at Support@Ragingape.com by email! </p></li>
           </ul>
         </div>
       </nav>
