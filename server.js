@@ -8,9 +8,9 @@ const app = express();
 
 const conn = mysql.createConnection({
     host: '127.0.0.1',
-    user: 'Ecommerce',
-    password: 'nylah04240',
-    database: 'Ecommerce'
+    user: 'username',
+    password: 'password',
+    database: 'databasename'
 });
 
 conn.connect((err) => {
