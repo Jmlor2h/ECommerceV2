@@ -9,7 +9,7 @@ export default class ProdList extends React.Component {
     searchBarText: "",
     colour: "",
     cost: "",
-  };
+  }; // setting state for products data and filters.
 
 
   componentDidMount() {
@@ -17,33 +17,33 @@ export default class ProdList extends React.Component {
       console.log(res);
       this.setState({ products: res.data });
     }).catch(error => console.error(`Error: ${error}`));
-  }
+  } // fetches data from server and adds it to state
 
   costFilter(cost) {
     return () => {
       this.setState({ cost });
     };
-  }
+  } // function to set state of cost.
 
   typeFilter(type) {
     return () => {
       this.setState({ type });
     };
-  }
+  } // function to set state for type
 
   colorFilter(colour) {
     return () => {
       this.setState({ colour });
     };
-  }
+  } // function to set state for color
 
   onChange(e) {
     this.setState({ searchBarText: e.target.value });
-  }
+  } // function to set state of searchbar for every key stroke.
 
   normalizeString(str) {
     return str.toLowerCase().replace(/\s/g, "");
-  }
+  } // makes the string lowercase, and removes all whitespaces.
 
   render() {
     return (
@@ -66,7 +66,7 @@ export default class ProdList extends React.Component {
                     placeholder=" Ex:(product name)"
                     type="text"
                     value={this.state.searchBarText}
-                    onChange={(e) => this.onChange(e)}
+                    onChange={(e) => this.onChange(e)} // sets state for searchbar text
                   />
                 </li>
                 <br />
@@ -139,20 +139,20 @@ export default class ProdList extends React.Component {
             {this.state.products
               .filter((props) => {
                 if (this.state.searchBarText === "") {
-                  return true;
+                  return true; // if nothing is typed in, it will pull all data.
                 } else {
                   return this.normalizeString(props.name).includes(
                     this.normalizeString(this.state.searchBarText)
-                  );
+                  ); // checks all data(props) names to see if it includes the searchbartext.
                 }
               })
 
               .filter((props) => {
                 if (this.state.type === "Base") {
                   return true;
-                } else {
+                } else { // returns all data if the "base" state is chosen.
                   return this.state.type === props.category;
-                }
+                } // if chosen state matches a products category it will be displayed
               })
 
               .filter((props) => {
@@ -160,7 +160,7 @@ export default class ProdList extends React.Component {
                   return true;
                 } else {
                   return this.state.colour === props.color;
-                }
+                } 
               })
 
               .filter((props) => {
@@ -185,7 +185,7 @@ export default class ProdList extends React.Component {
                     </div>
                     <div class="product-content">
                       <h3 class="product-name">{props.name}</h3>
-                      <p class="product-desc">{props.proddesc}</p>
+                      <p class="product-desc">{props.desc}</p>
                       <p class="product-price">${props.price}</p>
                       <button type="button" class="add-to-cart-btn">
                         <i class="fa fa-shopping-cart"></i> Add To Cart

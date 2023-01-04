@@ -6,26 +6,26 @@ const path = require('path');
 const app = express();
 
 
-const conn = mysql.createConnection({
+const conn = mysql.createConnection({ // setting connection to mysql
     host: '127.0.0.1',
-    user: 'username',
-    password: 'password',
-    database: 'databasename'
-});
+    user: 'Ecommerce',
+    password: 'nylah04240',
+    database: 'Ecommerce'
+}); 
 
-conn.connect((err) => {
+conn.connect((err) => { // Connecting to mysql
     if(err){
         console.log(`can't connect to db`);
         console.log(err.errno);
         return; 
     }
-    console.log(`connection worked`);
+    console.log(`connection to db worked`);
 })
 
 app.get('/api/products', (req, res) =>{
-    if (!conn) res.send([]);
+    if (!conn) res.send([]); // if mysql does not connect, it will send nothing.
 
-    conn.query("SELECT * FROM products2", (err, results) =>{
+    conn.query("SELECT * FROM products2", (err, results) =>{ // it will send this if mysql does connect.
         if (err) {
             console.log(err)
         } else {
@@ -34,13 +34,13 @@ app.get('/api/products', (req, res) =>{
     });
 });
 
-app.use(express.static(path.join(__dirname, "./build")));
+app.use(express.static(path.join(__dirname, "./build"))); // middleware that makes the build folder static.
 
 app.use((req, res) => {
-    res.sendFile(path.join(__dirname, "./build", "index.html"));
+    res.sendFile(path.join(__dirname, "./build", "index.html")); // server will use this file as launch page which will be the index.html within the build folder.
 });
 
-const port = 4000;
-app.listen(port, () => { 
+const port = 4000; // port it will run on.
+app.listen(port, () => {  // starts server on this port.
     console.log(`console listening on ${port}`);
 });

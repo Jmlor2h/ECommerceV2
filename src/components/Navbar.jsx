@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 const Navbar = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [isNavExpanded, setIsNavExpanded] = useState(false) // state will be used to tell if navbar is expanded or not.
 
     return (
       <nav className="navigation">
@@ -14,7 +14,7 @@ const Navbar = () => {
         <button
           className="hamburger"
           onClick={() => {
-            setIsNavExpanded(!isNavExpanded)
+            setIsNavExpanded(!isNavExpanded) // isNavExpanded is set to false by default, so this will set it to the opposite which is true
           }}
         >
 <svg viewBox="0 0 100 80" width="40" height="40">
@@ -25,23 +25,23 @@ const Navbar = () => {
         </button>
         <div
           className={
-            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu" // depending on what it is set to true/false, will determine the class name.
           }
         >
           <ul>
             <li>
             <Link onClick={() => {
-            setIsNavExpanded(!isNavExpanded)
+            setIsNavExpanded(false)
           }} class='navl' to='/'>Home</Link>
             </li>
             <li>
             <Link onClick={() => {
-            setIsNavExpanded(!isNavExpanded)
+            setIsNavExpanded(false)
           }} class='navl' to='/products'>Products</Link>
             </li>
             <li>
             <Link onClick={() => {
-            setIsNavExpanded(!isNavExpanded)
+            setIsNavExpanded(false)
           }} class='navl' to='/contact'>Contact</Link>
             </li>
             <li class="navdescli"><p class="navdescmobile">We're glad you're here!</p>

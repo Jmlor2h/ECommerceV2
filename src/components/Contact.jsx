@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div class="contact">
           <h3>email us</h3>
-          <form action="https://formsubmit.co/8ee9817eff6b4697f88be4436386df4c" method="POST">
+          <form action="https://formsubmit.co/8ee9817eff6b4697f88be4436386df4c" method="POST"> {/* Using 3rd party api to submit data for form */}
             <p>
               <label>Name</label>
               <input type="text" name="name" required />
